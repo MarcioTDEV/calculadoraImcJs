@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url('../img/5570863.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Div que vai gauradar todo o conteúdo e mudar de cor de acordo com o resultado */
+.full-box{
+    width: 80%;
+    background-color:aquamarine;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    
+}
+
+/* Div que vai comportar o titulo e o parágrafo*/
+.textos h1, .textos p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Div imc guarda as divs dados(onde ficam os inputs) e resultado(que será exibido com js)*/
+ .imc{
+     background-color: aquamarine;
+    margin-top: 30px;
+ }
+ .dados input{
+     width: 100%;
+     padding: 15px;
+     font-size: 15px;
+     box-shadow: none;
+     border: none;
+     margin-bottom: 15px;
+ }
+ .submit{
+     background-color:lightgreen;
+ }
+
+ @media screen and (min-width: 800px){
+     section{
+         position: relative;
+     }
+     .full-box{
+         position: relative;
+            top: 100%;
+            transform: translateY( 25%); 
+     }
+    .textos{
+        width: 48%;
+        float: left;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); 
+    }
+    .imc{
+        width: 48%;
+        float: right;
+
+    }
+ }
+
+ @media screen and (min-width:1000px){
+     section{
+         max-width: 1000px;
+         margin: auto;
+     }
+ }
